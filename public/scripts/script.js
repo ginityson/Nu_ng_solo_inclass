@@ -12,6 +12,12 @@ myApp.controller( "chezTablesController", [ "$scope", function( $scope ){
     {capacity: 'six'},
     {capacity: 'eight'}
   ];
+  $scope.status = [
+    {status: 'empty'},
+    {status: 'seated'},
+    {status: 'served'},
+    {status: 'dirty'}
+  ];
   $scope.createTable = function(){
       $scope.newTable = {
         name: $scope.tableNameBinder,

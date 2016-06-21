@@ -11,12 +11,12 @@
     <div ng-controller="chezTablesController">
     <input type="text" ng-model="tableNameBinder" value="" placeholder='table name'>
     <!-- <select ng-capacity='selectedCapacity' ng-model="kittyfoo"> -->
-        <select ng-model="capacityIn">
+    <select ng-model="capacityIn">
       <option ng-repeat='x in capacity' value='{{x.capacity}}'>{{x.capacity}}</option>
     </select>
     <button ng-click="createTable()">Get Input</button>
       <ul>
-        <li ng-repeat='record in allTables'>Table {{record.name}}:  Capacity: {{record.capacity}}</li>
+        <li ng-repeat='record in allTables'>Table {{record.name}}:  Capacity: {{record.capacity}}  <select ng-model="statusIn"><option ng-repeat='x in status' value='{{ x.status}}'>{{ x.status}} </li>
       </ul>
   </div>
   </body>
