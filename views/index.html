@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="vendors/angular.min.js" charset="utf-8"></script>
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <title>Nu ng solo inclass</title>
+  </head>
+  <body>
+    <h1>Nu ng solo inclass</h1>
+    <div ng-controller="testController">
+    <input type="text" ng-model="testBinder" value="" placeholder='2-way bind input'>
+    <p>2-way data bind output: {{ testBinder }}</p>
+    <button ng-click="getTestInput()">Get Input</button>
+  </div>
+  </body>
+</html>
