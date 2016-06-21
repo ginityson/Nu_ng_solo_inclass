@@ -4,14 +4,20 @@
     <meta charset="utf-8">
     <script src="vendors/angular.min.js" charset="utf-8"></script>
     <script src="scripts/script.js" charset="utf-8"></script>
-    <title>Nu ng solo inclass</title>
+    <title>Nu ng Restaurant Angular Refactor</title>
   </head>
   <body>
-    <h1>Nu ng solo inclass</h1>
-    <div ng-controller="testController">
-    <input type="text" ng-model="testBinder" value="" placeholder='2-way bind input'>
-    <p>2-way data bind output: {{ testBinder }}</p>
-    <button ng-click="getTestInput()">Get Input</button>
+    <h1>Nu ng Restaurant Angular Refactor</h1>
+    <div ng-controller="chezTablesController">
+    <input type="text" ng-model="tableNameBinder" value="" placeholder='table name'>
+    <!-- <select ng-capacity='selectedCapacity' ng-model="kittyfoo"> -->
+        <select ng-model="capacityIn">
+      <option ng-repeat='x in capacity' value='{{x.capacity}}'>{{x.capacity}}</option>
+    </select>
+    <button ng-click="createTable()">Get Input</button>
+      <ul>
+        <li ng-repeat='record in allTables'>Table {{record.name}}:  Capacity: {{record.capacity}}</li>
+      </ul>
   </div>
   </body>
 </html>
