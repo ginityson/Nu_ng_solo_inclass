@@ -9,7 +9,7 @@
   <body>
     <h1>Nu ng Restaurant Angular Refactor</h1>
     <div ng-controller="chezTablesController">
-    <input type="text" ng-model="tableNameBinder" value="" placeholder='table name'>
+    <input type="text" ng-model="tableNameBinder" id="tableName" value="" placeholder='table name'>
     <!-- <select ng-capacity='selectedCapacity' ng-model="kittyfoo"> -->
     <select ng-model="capacityIn">
       <option ng-repeat='x in capacity' value='{{x.capacity}}'>{{x.capacity}}</option>

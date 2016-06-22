@@ -31,8 +31,8 @@ myApp.controller( "chezTablesController", [ "$scope", function( $scope ){
       for(var i=0; i<$scope.allTables.length; i++){
         console.log($scope.allTables);
         outputText +=  $scope.allTables[i].name + $scope.allTables[i].capacityIn;
-
-      }
-
+      }//end of loop
+          $scope.tablNameBinder = " ";//clears table name from in box
+          $scope.capacityIn = " ";//clears number from capacity dropdown
   };
 }]);//end of controller
