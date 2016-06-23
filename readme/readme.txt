@@ -154,7 +154,7 @@ test and make sure it works
 78
     console.log( 'inputs captured: ' + $scope.allInput.length );
 79
-    $scope.allInput.push( $scope.testBinder ); 
+    $scope.allInput.push( $scope.testBinder );
 80
   };
 81
